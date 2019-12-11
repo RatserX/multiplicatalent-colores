@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ColorService } from 'src/app/service/color.service';
-import { Page } from 'src/app/model/page';
 
 @Component({
   selector: 'app-index',
@@ -9,15 +7,11 @@ import { Page } from 'src/app/model/page';
 })
 export class IndexComponent implements OnInit {
 
-  private pages: Page[];
-  public selectedPage: Page;
+  public pageNumber: number;
 
-  constructor(private colorService : ColorService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.colorService.getPagedColors().subscribe((data) => {
-      console.log(data);
-    })
   }
 
 }

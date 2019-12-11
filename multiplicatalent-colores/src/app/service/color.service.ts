@@ -9,7 +9,7 @@ export class ColorService {
 
   constructor(private httpClient: HttpClient) { }
 
-  public getPagedColors() {
-    return this.httpClient.get(`${environment.api.url}/colors`);
+  public getPagedColors(pageNumber?: number) {
+    return this.httpClient.get(`${environment.api.url}/colors?page=${pageNumber}`);
   }
 }
