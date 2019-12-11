@@ -16,9 +16,7 @@ export class IndexPageComponent implements OnInit {
 
   ngOnInit() {
     this.colorService.getPagedColors(this.pageNumber).subscribe((x: Page) => {
-      let data : any = x.data;
-      console.log(x);
-      console.log(data);
+      this.page = x;
     });
   }
 

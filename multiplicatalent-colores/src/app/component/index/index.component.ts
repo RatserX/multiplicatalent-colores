@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-index',
@@ -9,7 +10,9 @@ export class IndexComponent implements OnInit {
 
   public pageNumber: number;
 
-  constructor() { }
+  constructor() {
+    this.pageNumber = environment.page.minNumber;
+  }
 
   ngOnInit() {
   }

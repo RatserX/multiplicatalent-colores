@@ -15,4 +15,9 @@ export class IndexPageColorComponent implements OnInit {
   ngOnInit() {
   }
 
+  public onClick(color: Color)
+  {
+    
+  }
+
 }
