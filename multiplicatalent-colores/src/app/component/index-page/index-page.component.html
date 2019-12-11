@@ -1,0 +1,7 @@
+<div *ngIf="page">
+    <ul>
+        <li *ngFor="let color of page.data">
+            <app-index-page-color [color]="color"></app-index-page-color>
+        </li>
+    </ul>
+</div>
