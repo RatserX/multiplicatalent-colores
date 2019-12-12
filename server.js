@@ -1,11 +1,11 @@
-import express, { static } from "express";
-import { join } from "path";
+const express = require("express");
+const path = require("path");
 
 const appName = "multiplicatalent-colores";
-const expressApp = express();
+const expressApplication = express();
 
-expressApp.use(static(`./dist/${appName}`));
-expressApp.get("/*", function(req, res) {
-    res.sendFile(join(__dirname, `./dist/${appName}/index.html`));
+expressApplication.use(express.static(`./dist/${appName}`));
+expressApplication.get("/*", function(req, res) {
+    res.sendFile(path.join(__dirname, `./dist/${appName}/index.html`));
 });
-expressApp.listen(process.env.PORT || 8080);
+expressApplication.listen(process.env.PORT || 8080);
