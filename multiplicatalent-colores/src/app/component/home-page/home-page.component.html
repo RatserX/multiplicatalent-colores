@@ -1,0 +1,7 @@
+<div class="grid" *ngIf="page">
+    <ul>
+        <li *ngFor="let color of page.data">
+            <app-home-page-color [color]="color"></app-home-page-color>
+        </li>
+    </ul>
+</div>

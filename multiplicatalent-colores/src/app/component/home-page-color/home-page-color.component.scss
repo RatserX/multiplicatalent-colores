@@ -1,0 +1,40 @@
+@import "src/app/component/variables.scss";
+
+.container {
+    @include primary-box;
+    
+    display: flex;
+    height: 170px;
+    margin: 2px;
+    text-decoration: none;
+    justify-content: space-between;
+
+    &:hover {
+        color: $secondary-color;
+    }
+
+    .top {
+        padding: $primary-padding 0 0 $primary-padding;
+        align-self: flex-start;
+        text-align: left;
+    }
+
+    .center {
+        align-self: center;
+        text-align: center;
+
+        p {
+            margin: 0;
+        }
+
+        p:last-of-type {
+            font-weight: bold;
+        }
+    }
+
+    .bottom {
+        padding: 0 $primary-padding $primary-padding 0;
+        align-self: flex-end;
+        text-align: right;
+    }
+}

@@ -1,0 +1,14 @@
+<div class="header">
+    Colores
+</div>
+<div *ngIf="pageNumber !== null">
+    <app-home-page [pageNumber]="pageNumber"></app-home-page>
+</div>
+<div class="footer">
+    <a href="#" (click)="onPreviousPage()">
+        &lt; Anterior
+    </a>
+    <a href="#" (click)="onNextPage()">
+        Siguiente >
+    </a>
+</div>

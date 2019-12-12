@@ -4,7 +4,7 @@ export const environment = {
     url: "https://reqres.in/api"
   },
   page: {
-    minNumber: 0,
-    maxNumber: 4
+    minNumber: 1,
+    maxNumber: 2
   }
 };

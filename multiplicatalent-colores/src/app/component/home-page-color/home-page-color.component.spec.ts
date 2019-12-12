@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IndexPageComponent } from './index-page.component';
+import { HomePageColorComponent } from './home-page-color.component';
 
-describe('IndexPageComponent', () => {
-  let component: IndexPageComponent;
-  let fixture: ComponentFixture<IndexPageComponent>;
+describe('HomePageColorComponent', () => {
+  let component: HomePageColorComponent;
+  let fixture: ComponentFixture<HomePageColorComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ IndexPageComponent ]
+      declarations: [ HomePageColorComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(IndexPageComponent);
+    fixture = TestBed.createComponent(HomePageColorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

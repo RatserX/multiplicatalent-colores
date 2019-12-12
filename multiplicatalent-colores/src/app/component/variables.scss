@@ -1,0 +1,10 @@
+$primary-color: #444444;
+$primary-border: 1px solid $primary-color;
+$primary-padding: 5px;
+$secondary-color: #FFF6F6;
+
+@mixin primary-box {
+    border: $primary-border;
+    border-radius: 10px;
+    color: $primary-color;
+}

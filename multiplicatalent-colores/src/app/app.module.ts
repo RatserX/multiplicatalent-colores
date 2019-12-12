@@ -4,16 +4,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { IndexComponent } from './component/index/index.component';
-import { IndexPageComponent } from './component/index-page/index-page.component';
-import { IndexPageColorComponent } from './component/index-page-color/index-page-color.component';
+import { HomeComponent } from './component/home/home.component';
+import { HomePageComponent } from './component/home-page/home-page.component';
+import { HomePageColorComponent } from './component/home-page-color/home-page-color.component';
+import { ClipboardDirective } from './directive/clipboard.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent,
-    IndexPageComponent,
-    IndexPageColorComponent
+    HomeComponent,
+    HomePageComponent,
+    HomePageColorComponent,
+    ClipboardDirective
   ],
   imports: [
     BrowserModule,
@@ -22,6 +24,6 @@ import { IndexPageColorComponent } from './component/index-page-color/index-page
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [IndexComponent]
+  bootstrap: [HomeComponent]
 })
 export class AppModule { }

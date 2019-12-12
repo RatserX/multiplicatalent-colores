@@ -1,0 +1,12 @@
+<a href="#" class="container" *ngIf="color" [ngStyle]="{'background-color': color.color}" (click)="onColorSelect(color)" appClipboard [appClipboardPayload]="color.color" (appClipboardPayloadCopied)="onColorSelect($event)">
+    <div class="top">
+        {{ color.year }}
+    </div>
+    <div class="center">
+        <p>{{ color.name }}</p>
+        <p>{{ color.color }}</p>
+    </div>
+    <div class="bottom">
+        {{ color.pantone_value }}
+    </div>
+</a>
