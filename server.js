@@ -1,11 +1,11 @@
-const express = require("express");
-const path = require("path");
+import express, { static } from "express";
+import { join } from "path";
 
 const appName = "multiplicatalent-colores";
 const expressApp = express();
 
-expressApp.use(express.static(`./dist/${appName}`));
+expressApp.use(static(`./dist/${appName}`));
 expressApp.get("/*", function(req, res) {
-    res.sendFile(path.join(__dirname, `./dist/${appName}/index.html`));
+    res.sendFile(join(__dirname, `./dist/${appName}/index.html`));
 });
 expressApp.listen(process.env.PORT || 8080);
