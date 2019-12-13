@@ -14,7 +14,7 @@ Angular is a TypeScript-based open-source web application framework led by the A
 
 [![N|Solid](https://www.gomycode.tn/images/learn/ExpressJS.png)](https://www.npmjs.com/package/express)
 
-Fast, unopinionated, minimalist web framework for node. Used for production deployment.
+Fast, unopinionated, minimalist web framework for node. Used by the server.js file on the root folder for production deployment on Heroku.
 
 ### ngx-ui-loader
 
