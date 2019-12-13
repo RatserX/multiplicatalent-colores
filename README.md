@@ -7,21 +7,25 @@ This a simple Angular 8 application which lets users obtain the Hex codes of a v
 ### Angular 8
 
 [![N|Solid](https://s.gravatar.com/avatar/4ab5b3c9862fc91e51e2e6f69a66e993?size=100&default=retro)](https://angular.io/)
+
 Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS.
 
 ### Express
 
 [![N|Solid](https://www.gomycode.tn/images/learn/ExpressJS.png)](https://www.npmjs.com/package/express)
+
 Fast, unopinionated, minimalist web framework for node. Used for production deployment.
 
 ### ngx-ui-loader
 
 [![N|Solid](https://img.stackshare.io/service/1120/thumb_retina_lejvzrnlpb308aftn31u.png)](https://www.npmjs.com/package/ngx-ui-loader)
+
 An all-in-one and fully customizable loader/spinner for Angular 5, 6, 7 and 8+ applications. It supports foreground, background spinner/loader, indicative progress bar and multiple loaders.
 
 ### SASS (SCSS)
 
 [![N|Solid](https://img.stackshare.io/service/1171/thumb_retina_jCR2zNJV.png)](https://sass-lang.com/)
+
 Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
 
 ## Installation & Execution
