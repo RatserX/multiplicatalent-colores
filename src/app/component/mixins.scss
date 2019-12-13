@@ -1,0 +1,19 @@
+@import "src/app/component/variables.scss";
+
+@mixin media-max-width($map, $key) {
+    @if (map-has-key($map, $key)) {
+        $value: map-get($map, $key);
+
+        @media (max-width: $value) {
+            @content;
+        }
+    } @else {
+        @error "Key (#{key}) not found in map.";
+    }
+}
+
+@mixin primary-box {
+    border: $primary-border;
+    border-radius: 10px;
+    color: $primary-color;
+}

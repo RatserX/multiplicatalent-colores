@@ -1,4 +1,9 @@
+@import "src/app/component/mixins.scss";
+
 .grid {
+    position: relative;
+    margin-bottom: 8px;
+
     ul {
         display: flex;
         height: 100%;
@@ -9,6 +14,18 @@
 
         li {
             flex: 0 33.3%;
+        }
+
+        @include media-max-width($max-widths, lg) {
+            li {
+                flex: 0 50%;
+            }
+        }
+
+        @include media-max-width($max-widths, sm) {
+            li {
+                flex: 0 100%;
+            }
         }
     }
 }

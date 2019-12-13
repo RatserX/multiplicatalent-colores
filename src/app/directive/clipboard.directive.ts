@@ -5,10 +5,10 @@ import { Directive, Input, Output, EventEmitter, HostListener } from '@angular/c
 })
 export class ClipboardDirective {
 
-  @Input("appClipboardPayload")
+  @Input("payload")
   payload: string
 
-  @Output("appClipboardPayloadCopied")
+  @Output("payloadCopied")
   payloadCopied: EventEmitter<string>
 
   constructor() {

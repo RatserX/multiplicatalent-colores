@@ -1,7 +1,8 @@
 <div class="grid" *ngIf="page">
-    <ul>
+    <ul ngxUiLoaderBlurred [loaderId]="'grid-loader'">
         <li *ngFor="let color of page.data">
             <app-home-page-color [color]="color"></app-home-page-color>
         </li>
     </ul>
+    <ngx-ui-loader [loaderId]="'grid-loader'"></ngx-ui-loader>
 </div>

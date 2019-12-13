@@ -1,10 +1,12 @@
+$max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px
+);
+
 $primary-color: #444444;
 $primary-border: 1px solid $primary-color;
-$primary-padding: 5px;
+$primary-padding: 6px 0 0 6px;
+$secondary-padding: 0 6px 6px 0;
 $secondary-color: #FFF6F6;
-
-@mixin primary-box {
-    border: $primary-border;
-    border-radius: 10px;
-    color: $primary-color;
-}

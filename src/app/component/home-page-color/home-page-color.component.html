@@ -1,12 +1,19 @@
-<a href="#" class="container" *ngIf="color" [ngStyle]="{'background-color': color.color}" (click)="onColorSelect(color)" appClipboard [appClipboardPayload]="color.color" (appClipboardPayloadCopied)="onColorSelect($event)">
-    <div class="top">
-        {{ color.year }}
+<a href="#" class="container" *ngIf="color" [ngStyle]="{'background-color': color.color}" appClipboard [payload]="color.color" (payloadCopied)="onColorSelect($event)">
+    <div class="info" *ngIf="!isClicked" [@enterLeave]>
+        <div class="top">
+            {{ color.year }}
+        </div>
+        <div class="center">
+            <p>{{ color.name }}</p>
+            <p>{{ color.color }}</p>
+        </div>
+        <div class="bottom">
+            {{ color.pantone_value }}
+        </div>
     </div>
-    <div class="center">
-        <p>{{ color.name }}</p>
-        <p>{{ color.color }}</p>
-    </div>
-    <div class="bottom">
-        {{ color.pantone_value }}
+    <div class="alert" *ngIf="isClicked" [@enterLeave]>
+        <div class="center">
+            ¡Copiado!
+        </div>
     </div>
 </a>

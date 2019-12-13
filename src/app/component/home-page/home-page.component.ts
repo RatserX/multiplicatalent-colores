@@ -2,6 +2,7 @@ import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 import { Page } from 'src/app/model/page';
 import { ColorService } from 'src/app/service/color.service';
 import { Subscription } from 'rxjs';
+import { NgxUiLoaderService } from 'ngx-ui-loader';
 
 @Component({
   selector: 'app-home-page',
@@ -16,7 +17,7 @@ export class HomePageComponent implements OnInit {
   private pagedColorsSubscription: Subscription;
   page: Page;
 
-  constructor(private colorService : ColorService) {
+  constructor(private colorService : ColorService, private ngxUiLoaderService: NgxUiLoaderService) {
   }
 
   ngOnInit() {
@@ -36,6 +37,7 @@ export class HomePageComponent implements OnInit {
       return;
     }
 
+    this.ngxUiLoaderService.startLoader("grid-loader");
     this.pagedColorsSubscription = this.colorService
       .getPagedColors(pageNumber)
       .subscribe(
@@ -44,6 +46,9 @@ export class HomePageComponent implements OnInit {
         },
         (error: any) => {
           console.error(error);
+        },
+        () => {
+          this.ngxUiLoaderService.stopLoader("grid-loader");
         }
       );
   }
