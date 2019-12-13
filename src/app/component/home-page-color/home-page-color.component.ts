@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Color } from 'src/app/model/color';
 import { trigger, style, transition, animate } from '@angular/animations';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-home-page-color',
@@ -37,7 +38,7 @@ export class HomePageColorComponent implements OnInit {
 
     setTimeout(() => {
       this.isClicked = false;
-    }, 750);
+    }, environment.animation.time);
   }
 
 }

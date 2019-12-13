@@ -1,3 +1,22 @@
+# MultiplicaTalent Colores
+
+This a simple Angular 8 application which lets users obtain the HEX codes of a variety of colors and copy them easily to their clipboard with a single click.
+
+## Technologies & Frameworks
+
+### Angular 8
+https://angular.io/
+
+
+
+
+
+
+
+
+
+
+
 # MultiplicatalentColores
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
