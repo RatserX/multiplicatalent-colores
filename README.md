@@ -1,6 +1,6 @@
 # MultiplicaTalent Colores
 
-This a simple Angular 8 application which lets users obtain the Hex codes of a variety of colors and copy them easily to their clipboard with a single button press.
+This a simple Angular 8 application which lets users obtain the Hex codes of a variety of colors and copy them easily to their clipboard with a single button press. Works on both desktop and mobile devices.
 
 ## Technologies & Frameworks
 
