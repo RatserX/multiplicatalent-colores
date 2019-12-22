@@ -26,6 +26,7 @@ export class HomePageColorComponent implements OnInit {
   color: Color;
 
   isClicked: boolean;
+  timeoutId: NodeJS.Timer;
 
   constructor() { }
 
@@ -36,7 +37,12 @@ export class HomePageColorComponent implements OnInit {
   public onColorSelect(color: Color) {
     this.isClicked = true;
 
-    setTimeout(() => {
+    if (this.timeoutId != null)
+    {
+      clearTimeout(this.timeoutId);
+    }
+
+    this.timeoutId = setTimeout(() => {
       this.isClicked = false;
     }, environment.animation.time);
   }
